@@ -37,13 +37,13 @@ const Sidebar = () => {
                   {item.title}
                 </p>
                 {item.links.map((link) => (
-                  <NavLink>
+                  <NavLink
                     to={`/${link.name}`}
                     key={link.name}
                     style={({ isActive }) => ({
                     })}
-                    className={({ isActive }) => isActive ? activeLink : normalLink }
-                
+                    className={({ isActive }) => (isActive ? activeLink : '')}
+                  >
                     {link.icon}
                     <span className="capitalize ">{link.name}</span>
                   </NavLink>
