@@ -30,10 +30,10 @@ import Editor from './pages/Editor';
 
 import './App.css';
 
-// import { useStateContext } from './contexts/ContextProvider';
+import { useStateContext } from './contexts/ContextProvider';
 
 const App = () => {
-    const activeMenu = true;
+    const { activeMenu } = useStateContext();
     // const { setCurrentColor, setCurrentMode, currentMode, activeMenu, currentColor, themeSettings, setThemeSettings } = useStateContext();
 
     // useEffect(() => {
