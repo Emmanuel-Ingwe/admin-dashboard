@@ -56,6 +56,9 @@ const Ecommerce = () => {
             </div>
             ))}
         </div>
+      </div>
+
+      <div className="flex gab-10 flex-wrap justify-center">
 
       </div>
     </div>
