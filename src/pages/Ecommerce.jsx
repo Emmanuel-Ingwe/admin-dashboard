@@ -3,9 +3,11 @@ import { BsCurrencyDollar } from 'react-icons/bs';
 import { GoPrimitiveDot } from 'react-icons/go';
 import { IoIosMore } from 'react-icons/io';
 import { DropDownListComponent } from '@syncfusion/ej2-react-dropdowns';
-import { Stacked, Pie,  LineChart, SparkLine } from '../components';
+import { Stacked, Pie,  LineChart } from '../components';
 import { earningData, medicalproBranding, recentTransactions, weeklyStats, dropdownData, SparklineAreaData, ecomPieChartData } from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
+
+import SparkLine from "../components/Charts/SparkLine";
 import Button from "../components/Button";
 // import product9 from '../data/product9.jpg';
 
@@ -81,13 +83,20 @@ const Ecommerce = () => {
             </p>
             <p className="text-gray-500 mt-1">Budget</p>
           </div>
+          <div className="mt-8">
           <p>
-              <span className="text font-semibold">$93,438</span>
+              <span className="text font-semibold">$48,438</span>
             </p>
-            <p className="text-gray-500 mt-1">Budget</p>
+            <p className="text-gray-500 mt-1">Expense</p>
           </div>
+
+          <div className="mt-5">
+            <SparkLine />
+          </div>
+
         </div>
       </div>
+    </div>
   )
 }
 
