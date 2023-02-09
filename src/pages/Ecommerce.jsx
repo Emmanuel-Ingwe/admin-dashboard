@@ -3,12 +3,13 @@ import { BsCurrencyDollar } from 'react-icons/bs';
 import { GoPrimitiveDot } from 'react-icons/go';
 import { IoIosMore } from 'react-icons/io';
 import { DropDownListComponent } from '@syncfusion/ej2-react-dropdowns';
-import { Stacked, Pie,  LineChart } from '../components';
+import { Pie,  LineChart } from '../components';
 import { earningData, medicalproBranding, recentTransactions, weeklyStats, dropdownData, SparklineAreaData, ecomPieChartData } from '../data/dummy';
 import { useStateContext } from '../contexts/ContextProvider';
 
 import SparkLine from "../components/Charts/SparkLine";
 import Button from "../components/Button";
+import Stacked from "../components/Charts/Stacked";
 // import product9 from '../data/product9.jpg';
 
 const Ecommerce = () => {
@@ -101,7 +102,19 @@ const Ecommerce = () => {
               color="blue"
             />
           </div>
-
+          <div className="mt-10">
+            <Button
+              color="white"
+              bgColor="blue"
+              text="Download Report"
+              borderRadius="10px"
+            />
+          </div>
+        </div>
+        <div>
+          <Stacked width="320px"
+            height="360px"
+          />
         </div>
       </div>
     </div>
