@@ -6,7 +6,7 @@ import { Header } from '../components';
 
 const Kanban = () => (
   <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
-    <h1 className="text-xl ml-5 mb-1">Kanban</h1>
+    <h1 className="text-xl ml-5 mb-1 font-bold">Kanban</h1>
     <KanbanComponent
       id="kanban"
       keyField="Status"
