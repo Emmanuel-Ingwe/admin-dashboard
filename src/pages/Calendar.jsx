@@ -23,7 +23,7 @@ const Scheduler = () => {
 
   return (
     <div className="m-2 md:m-10 mt-24 p-2 md:p-10 bg-white rounded-3xl">
-      <h1 className="text-xl">Calender</h1>
+      <h1 className="text-xl mb-4">Calender</h1>
       <ScheduleComponent
         height="650px"
         ref={(schedule) => setScheduleObj(schedule)}
