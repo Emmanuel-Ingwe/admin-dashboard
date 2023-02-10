@@ -33,7 +33,7 @@ import './App.css';
 import { useStateContext } from './contexts/ContextProvider';
 
 const App = () => {
-    const { activeMenu, themeSettings } = useStateContext();
+    const { activeMenu, themeSettings, setThemeSettings } = useStateContext();
     // const { setCurrentColor, setCurrentMode, currentMode, activeMenu, currentColor, themeSettings, setThemeSettings } = useStateContext();
 
     // useEffect(() => {
@@ -59,7 +59,7 @@ const App = () => {
                                 // onClick={() => setThemeSettings(true)}
                                 style={{ background: 'blue', borderRadius: '50%' }}
                                 className="text-3xl text-white p-3 hover:drop-shadow-xl hover:bg-light-gray"
-                            >
+                                onClick={() => setThemeSettings(true)}>
                                 <FiSettings />
                             </button>
 
