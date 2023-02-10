@@ -7,7 +7,7 @@ import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Sidebar from "./components/Sidebar";
-import ThemeSettings from "../components/ThemeSettings";
+import ThemeSettings from "./components/ThemeSettings";
 
 import Ecommerce from './pages/Ecommerce';
 import Calendar from './pages/Calendar';
