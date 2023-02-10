@@ -33,7 +33,7 @@ import './App.css';
 import { useStateContext } from './contexts/ContextProvider';
 
 const App = () => {
-    const { activeMenu } = useStateContext();
+    const { activeMenu, themeSettings } = useStateContext();
     // const { setCurrentColor, setCurrentMode, currentMode, activeMenu, currentColor, themeSettings, setThemeSettings } = useStateContext();
 
     // useEffect(() => {
@@ -85,7 +85,7 @@ const App = () => {
                         </div>
 
                         <div>
-                            <ThemeSettings />
+                            {themeSettings && <ThemeSettings />}
 
                             <Routes>
                                 {/* dashboard  */}
